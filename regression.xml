@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+    <parameter name="browser" value="chrome"> </parameter>
+    <test name="Regression Test">
+        <classes>
+            <class name="Tests.UserRegistrationTest"/>
+            <class name="Tests.SearchProjectUsingAutoSuggest"/>
+            <class name="Tests.SearchProductTest"/>
+            <class name="Tests.ContactUsTest"/>
+            <class name="Tests.EmailFriendTest"/>
+        </classes>
+    </test>
+</suite>
+

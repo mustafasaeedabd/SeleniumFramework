@@ -1,0 +1,16 @@
+[
+  {"firstName" : "Mustafa",
+    "lastName" : "Saeed",
+    "email" : "mustafaghhjg@gnail.com",
+    "password" : "1345689"}
+,
+  {"firstName" : "Ahmed",
+    "lastName" : "Hassan",
+    "email" : "Ahmedhsassniioi@gnail.com",
+    "password" : "1345689"}
+,
+  {"firstName" : "Hossam",
+    "lastName" : "Saeed",
+    "email" : "usertestlast@gnail.com",
+    "password" : "1345689"}
+]
