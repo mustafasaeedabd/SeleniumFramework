@@ -1,13 +1,13 @@
 package Tests;
 
 import Pages.*;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.Random;
 
 public class AddProductReviewTest extends  TestBase{
-
     HomePage homeObject ;
     UserRegistrationPage registrationObject ;
     SearchPage searchPageObject ;
