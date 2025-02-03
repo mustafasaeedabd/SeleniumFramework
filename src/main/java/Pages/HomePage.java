@@ -10,7 +10,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 
-public class HomePage extends  PageBase{
+public class HomePage extends  PageBase {
     public HomePage(WebDriver driver) {
         super(driver);
         // added object now, because I didn't it in "PageBase"page to get "scroll Down Btn" method.
@@ -19,40 +19,45 @@ public class HomePage extends  PageBase{
     }
 
     @FindBy(linkText = "Register")
-    WebElement registerBtn ;
+    WebElement registerBtn;
     @FindBy(linkText = "Log in")
-    public  WebElement LoginBtn ;
+    public WebElement LoginBtn;
     @FindBy(linkText = "Log out")
-    public   WebElement signOutBtn ;
+    public WebElement signOutBtn;
 
-    @FindBy (linkText =  "Contact us")
-    WebElement ContactUSBtn ;
-    @FindBy (id = "customerCurrency")
+    @FindBy(linkText = "Contact us")
+    WebElement ContactUSBtn;
+    @FindBy(id = "customerCurrency")
     WebElement currencyDrl;
 
-    @FindBy (linkText = "Computers")
+    @FindBy(linkText = "Computers")
     WebElement computerMenu;
-    @FindBy (linkText = "Notebooks")
-    WebElement NotebooksOption ;
+    @FindBy(linkText = "Notebooks")
+    WebElement NotebooksOption;
 
-    public void OpenRegistrationPage (){
+    public void OpenRegistrationPage() {
         registerBtn.click();
     }
+
     public void OpenLoginPage() {
         LoginBtn.click();
     }
-    public void userLogOut (){
+
+    public void userLogOut() {
         clickBtn(signOutBtn);
     }
-    public void openContactUsPage () {
+
+    public void openContactUsPage() {
         scrollDownBtn();
         ContactUSBtn.click();
     }
-    public void changeCurrency () {
-        select =  new Select(currencyDrl);
+
+    public void changeCurrency() {
+        select = new Select(currencyDrl);
         select.selectByVisibleText("Euro");
     }
-    public void SelectNoteBooksMenu () {
+
+    public void SelectNoteBooksMenu() {
         clickBtn(computerMenu);
         actions.moveToElement(NotebooksOption).click().build().perform();
     }
